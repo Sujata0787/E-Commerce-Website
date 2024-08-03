@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+    
+}
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+.btn{
+    display: inline-block;
+    background: #ff532b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+
+.header .row{
+    margin-top: 70px;
+}
+.btn:hover{
+    background: #563434;
+}
+.cat{
+    margin: 3px  0;
+    
+
+}
+.col3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+
+}
+.col3 img{
+    width: 100%;
+}
+.small{
+     max-width: 1080px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+     
+
+    
+}
+.col4{
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    flex-basis: 25%;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.5s;
+    
+}
+.col4 img{
+    width: 100%;
+}
+.title{
+    text-align :center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 20px;
+}
+.rating {
+    color: rgb(33, 177, 33);
+}
+.col4:hover{
+    transform: translate(-5px);
+}
+.col2:hover{
+    transform: translate(-6px);
+    
+}
+.brands{
+    margin: 50px auto;
+
+}
+.col5{
+    width: 100px;
+}
+.col5 img{
+    width: 100%;
+    cursor: pointer;
+    
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color:#8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footercol1,.footercol2,.footercol3,.footercol4{
+     min-width: 250px;
+    margin-bottom: 20px;
+}
+.footercol1{
+    flex-basis: 30%;
+}
+.footercol2{
+    flex: 1;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center; 
+}
+.trolley{
+    width: 28px;
+}
+.menu{
+    width: 28px;
+    margin-left: 20px;
+    
+}
+
+/*-----------media querr---------*/
+
+@media only screen and (max-width :800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li{
+        color: #fff;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/*-----media querry for less than 600 -----------*/
+@media only screen and (max-width :800px){
+    .row{
+        text-align: center;
+
+}
+.col2,.col3,.col4{
+    flex-basis: 100%;
+
+}
+}
+
+/*------------------------------------product css-----------------------------------------------------*/
+.row2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff532b;
+    padding: 5px;
+
+}select:focus{
+    outline: none;
+}
+.pagebtn{
+    margin-bottom: 80px;
+}
+.pagebtn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.pagebtn  :hover{
+    background: blue;
+    color: #fff;
+}
+
+/*---------------------------------------singleproduct css----------------------------------------------------------*/
+.smallsingleproduct select{
+    padding: 7pxpx;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.smallsingleproduct col2{
+    margin-bottom: 20px;
+}
+.smallsingleproduct input{
+    width: 50px;
+    height: 40px;
+    padding: 7px;
+    border: 1px solid #ff523b;
+}
+.smallsingleproduct .col2 img{
+    width: 60%;
+}
+.smallimgrow{
+    display: flex;
+    justify-content: space-between;
+}
+.smallimgcol{
+    flex-basis: 80%;
+    cursor: pointer;
+}
+
+
+/*-----------------------cart items----------------------------*/
+.smallcartpage{
+    margin: 80px auto;
+    margin-left: 100px;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cartinfo img{
+    width: 30%;
+    
+}
+.cartinfo {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+th{
+    text-align: left;
+    padding: 8px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+    margin-left: 10px 50px;
+}
+td{
+    padding: 10px;
+}
+td input{
+    width: 50px;
+    height: 40px;
+}
+td a{
+    color: #ff532b;
+    font-size: 12px;
+}
+
+
+/*-------------------------------------register css--------------------------------------------------*/
+.accountpage{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);
+
+}
+.formcontainer{
+    background: #fff;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.formcontainer span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    
+}
+.formbtn{
+    max-width: 300px;
+    display: inline-block;
+}
+.formbtn input{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+
+}
+.form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}

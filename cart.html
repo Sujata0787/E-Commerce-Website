@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sujata single product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="file:///C:/Users/user/Desktop/images/logo.png" width="50px">
+            
+        </div>
+        <nav>
+            <ul id="menuitems">
+    <li><a href="index.html">Home</a></li>
+     <li><a href="product.html">Products</a></li>
+     <li><a href="cart.html">My Cart</a></li>
+    <li><a href="">Contact</a></li>
+     <li><a href="register.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="file:///C:/Users/user/Downloads/trolley.png"class="trolley">
+        <img src="file:///C:/Users/user/Downloads/menu-bar.png" class="menu" onclick="menutoggle()">
+        
+    </div>
+    
+    </div>
+    
+    </div>
+
+    <!---------------------------cart items-------------------------------------->
+    <div class="smallcartpage">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartinfo">
+                    <img src="file:///C:/Users/user/Desktop/images/bg999.jpg">
+                    
+                    <p>Hand Bag<br></p>
+                    <small>Price: 190 rs</small>
+                    <br>
+                    <a href="">Remove</a>
+                    </div>
+                </td>
+                <td>Product Name</td>
+                <td><input type="number" value="1"></td>
+                <td>Rs=7000rs</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--------------------------------------------footer==============================================-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+               <div class="footercol1">
+                <h3><b>Download Our App</b></h3>
+                <p><b>Download App for Android and ios mobile phone.</b></p>
+               </div>
+               <div class="footercol2">
+                <h3><b>Public Message</b></h3>
+                <p><b>Our purpose is to Sustainability make the pleasure<br> and benefits
+                    of sports Acceessible to Many
+                </b></p>
+               </div>
+               <div class="footercol3">
+                <h3><b>Useful Links</b></h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+               </div>
+               <div class="footercol4">
+                <h3><b>Follow Us</b></h3>
+                <ul>
+                    <li>Facebok</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+               </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 -Easy Tutorials</p>
+        </div>
+    </div>
+
+    <!-----------------------------------js for toggle--------------------->
+<script>
+    var menuitems=document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if( menuitems.style.maxHeight=="0px")
+        {
+            menuitems.style.maxHeight="200px";
+        }
+       else{
+        menuitems.style.maxHeight="0px";
+       }
+    }
+
+
+</script>
